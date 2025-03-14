@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# User Management System (UMS) 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The **User Management System (UMS)** is a React.js-based application that allows users to **add, update, delete, and manage user data** efficiently. The application integrates with an external API to fetch and modify user details dynamically.
 
-Currently, two official plugins are available:
+## Live Demo 🌍
+🔗 [UMS Live Demo](https://ums-gamma.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
+- 📌 **Add New Users**
+- 🔄 **Update Existing Users**
+- ❌ **Delete Users**
+- 🔀 **Toggle User Status** (Active/Inactive)
+- 📡 **Fetch Data from External API**
+- 🎯 **Optimized State Management with Context API**
 
-## Expanding the ESLint configuration
+## Technologies Used 🛠️
+- ⚛ **React.js** - UI Framework
+- 📝 **React Hook Form** - Form Handling
+- 🔄 **Context API** - State Management
+- ⏳ **useEffect** - Side Effects Handling
+- 🌐 **DummyJSON API** - Data Source
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation & Setup 🚀
+To run this project locally, follow these steps:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/rabea-shaban/UMS.git
+   cd UMS
+   ```
+
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
+
+3. **Run the development server**
+   ```sh
+   npm run dev
+   ```
+
+4. Open your browser and go to `http://localhost:5173/` (if using Vite).
+
+## API Integration 🌐
+This project fetches and updates user data from **[DummyJSON API](https://dummyjson.com/)**.
+
+## Folder Structure 📂
+```
+UMS/
+│── public/
+│── src/
+│   │── components/   # Reusable UI Components
+│   │── context/      # Context API for State Management
+│   │── pages/        # Application Pages
+│   │── App.js        # Main Application Component
+│   │── index.js      # Entry Point
+│── package.json
+│── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Contribution 🤝
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Contact 📩
+For any inquiries or feedback, reach out to me:
+- **LinkedIn:** [linkedin.com/in/rabea-sh-elzayat](https://www.linkedin.com/in/rabea-sh-elzayat)
+- **GitHub:** [github.com/rabea-shaban](https://github.com/rabea-shaban)
+- **Email:** engrabeashaban@gmail.com
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+🚀 **Let's build amazing things together!**
