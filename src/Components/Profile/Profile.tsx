@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import profile from "../../assets/profile.jpeg";
 import "./profile.scss";
 import { AuthContext } from "../../context/AuuthContext";
 import { AuthContextType } from "../../interface";
