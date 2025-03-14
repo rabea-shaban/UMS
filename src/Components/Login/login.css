@@ -1,0 +1,37 @@
+.container-login {
+  background: linear-gradient(71.17deg, #feaf00 19.35%, #f8d442 90.12%);
+}
+.container-login .form-control {
+  border: none;
+  border: 2px solid #e5e5e5;
+  padding: 15px;
+  transition: border-bottom 0.3s ease;
+  margin-top: 10px;
+}
+
+.container-login .form-control:focus {
+  box-shadow: none !important;
+  border: 2px solid #e5e5e5;
+}
+.container-login label {
+  font-weight: 500;
+  color: #6c6c6c;
+}
+.container-login .login-Title .title {
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+.container-login .login-Title .title::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 50px;
+  background: #f8d442;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,26 @@
+.btn-primary2,
+.btn-primary-light:hover,
+.btn-primary-light:active,
+.btn-primary-light:focus {
+  background-color: #845adf !important;
+  color: #fff !important;
+  border-color: #845adf !important;
+  font-weight: bold !important;
+}
+.btn-primary-light {
+  background-color: rgba(220, 205, 255, 0.7) !important;
+  color: #845adf !important;
+  border-color: #845adf6d !important;
+  font-weight: bold !important;
+}
+
+.text-primary2{
+    color: #845adf !important;
+}
+.Summary .icon svg {
+  background: #efeeee;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
